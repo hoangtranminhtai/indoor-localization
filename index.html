@@ -1,11 +1,16 @@
+<!DOCTYPE html>
 <html>
     <head>
-        <title>Templated Application</title>
+        <title>Application</title>
     </head>
     <body>
-        <h1>Main Application</h1>
-        <h1>Templated </h1>
-        Id: <b>{{.Id}}</b> <p/>
-        Name: <b> {{.Name}}</b>
+        <h1>Indoor Localization</h1>
+        <b>Position:</b>
+        x = <b>{{.Lat}}</b>
+        y = <b> {{.Lng}}</b>
+        <p></p>
+        <canvas id="myCanvas" width="{{.Lat}}" height="{{.Lng}}" style="border:1px solid #000000;">
+            Your browser does not support the HTML5 canvas tag.
+        </canvas>
     </body>
 </html>
